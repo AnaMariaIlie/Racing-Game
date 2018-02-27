@@ -1,0 +1,21 @@
+#version 330
+
+// TODO: get values from fragment shader
+in vec3 frag_normal;
+in vec3 frag_color;
+in vec3 frag_position;
+in vec2 frag_coord;
+
+layout(location = 0) out vec4 out_color;
+
+out vec3 out_position;
+out vec3 out_normal;
+out vec2 out_coord;
+
+void main()
+{
+	// TODO: write pixel out color
+
+	out_color = vec4(frag_color,1);
+
+}

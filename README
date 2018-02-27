@@ -1,0 +1,26 @@
+
+
+
+				README
+				
+				
+Generarea soselei: Am generat soseaua din placi dreptunghiulare(formate din doua triunghiuri,
+declarate prin intermediul VertexFormat). Soseaua este delimitata de borduri, obiecte de tip
+paralelipiped. Paralelipipedul l-am obtinut prin modificarea fisierului box.obj si scalare.
+
+Generarea obstacolelor: Obstacolele randate in scena sunt obiecte de tip .obj, descarcate de pe
+https://free3d.com/3d-models/file/1/obj.
+
+Desenarea cerului si a pamantului: Cerul este reprezentat de o sfera careia ii schimb culoarea(de
+la albastru inchis la albastru deschis) in VertexShader in functie de timp. De asemenea, pamantul este un
+plan care isi schimba culoarea de la verde inchis la verde deschis tot in functie de timp.
+
+Desenarea wireframe: se face la apasarea tastei „Space”.
+
+Desenarea masinii: Masina este formata dintr-un paralelipiped si un trunchi de
+piramida( obtinute prin modificarea fisierului box.obj), iar rotile din sfere. Miscarea masinii se face
+schimband la fiecare frame coordonatele fiecarui element(mai putin coordonata Oy) . De asemenea si
+rotatia se executa asemantor, crescand sau scazand constatnt unghiul cu care se doreste rotatia. Directia
+se mentine cu ajutorul functiilor sin si cos(ca la tema1), iar viteza cu care sunt inmultite aceste
+coordonate creste si scade in functie de apasarea tastelor(Up-accelerare, Down-franare). La roti, in plus,
+exista si o rotatie in jurul propriului centru.
